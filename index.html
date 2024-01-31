@@ -10,38 +10,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Honk&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Honk&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <style>
         body,
         html {
             font-family: 'Poppins', sans-serif;
-            background-color:black;
-            color:white;
+            background-color: black;
+            color: white;
         }
 
 
         h1 {
-            font-family:'Poppins', sans-serif;
+            font-family: 'Poppins', sans-serif;
 
         }
 
 
         .w3-card {
             font-family: 'Poppins';
-    background-color: #1a1a1a;
-    color: white;
-    border-radius: 10px;
-    border: 2.5px solid #008000;
-    filter: drop-shadow(5px 5px 0px #008000)!important;
-    overflow: hidden;
-    padding: 0px;
+            background-color: #1a1a1a;
+            color: white;
+            border-radius: 10px;
+            border: 2.5px solid #008000;
+            filter: drop-shadow(5px 5px 0px #008000) !important;
+            overflow: hidden;
+            text-align: left;
+            aspect-ratio:1/1;
+            height:auto;
         }
 
         button {
-            background-color:#1a1a1a!important;
-            border-radius:100vmin;
+            background-color: #1a1a1a !important;
+            border-radius: 100vmin;
         }
 
         .w3-card h1 {}
@@ -56,14 +62,7 @@
             font-family: 'Poppins';
         }
 
-        .w3-card h3 {
-            float: left;
-    background-color: #008000;
-    border: 10px solid #008000;
-    vertical-align: top;
-    margin: 0px;
-    border-radius: 0px 0px 10px 0px;
-        }
+        .w3-card h3 {}
 
         h4 {
             font-family: 'Poppins';
@@ -80,24 +79,24 @@
         .w3-card a {}
 
 
+
+        #discordbutton {
+            font-weight: bold;
+            font-family: 'DM Sans', sans-serif;
+            width: fit-content;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 10px 30px;
+            background-color: #5865F2 !important;
+            max-width: 95%;
+            font-size: 20px !important;
+        }
+
         .big-title {
             font-weight:900;
             filter:drop-shadow(5px 5px 0px #008000);
             font-size:47.5px!important;
         }
-
-        #discordbutton {
-            font-weight: 900;
-    font-family: 'DM Sans', sans-serif;
-    width: fit-content;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 10px 30px;
-    background-color: #5865F2!important;
-    max-width: 95%;
-    font-size: 20px!important;
-        }
-
     </style>
 </head>
 
@@ -120,66 +119,64 @@
             <h4>Cal Poly Humboldt</h4>
             <h1 class="big-title w3-xxxlarge w3-animate-bottom">COMPUTER SCIENCE CLUB</h1>
             <div class="w3-padding-16">
-                <button id = "discordbutton" class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey"
-                    onclick="window.location.href = 'https://discord.com/invite/Q753n9UJ'"><i class = "ri-discord-fill"></i> Join our Discord Server</button>
-                    <br>
-                    <br>
+                <button id="discordbutton" class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey"
+                    onclick="window.location.href = 'https://discord.com/invite/Q753n9UJ'"><i
+                        class="ri-discord-fill"></i> Join our Discord Server</button>
+                <br>
+                <br>
             </div>
         </div>
     </header>
 
 
-    <div class="w3-row-padding w3-center w3-margin-top" style= "padding:50px;padding-top:0px;padding-bottom:0px;">
-        <div class="w3-half">
+    <div class="w3-row-padding w3-center w3-margin-top" style="padding:50px;padding-top:0px;padding-bottom:0px;">
+        <div class="w3-third">
             <div class="w3-card w3-container">
                 <h3>Discord</h3><br>
-                <i class = "ri-discord-fill">   </i>
+                <i class="ri-discord-fill"> </i>
                 <p>Join the conversation.</p>
                 <button></button>
             </div>
         </div>
 
-        <div class="w3-half">
+        <div class="w3-third">
+            <div class="w3-card w3-container">
+                <h3>Why CS Club?</h3><br>
+                <i class="ri-discord-fill"> </i>
+                <h2>Our goal is to create a welcoming atmosphere 
+                    for everyone while creating awesome and engaging events for everyone to enjoy.
+                     Come join the club to help participate in creating fun and engaging events, or just come and meet new people that 
+                     have the same interest in technology as you do!</h2>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="w3-third">
             <div class="w3-card w3-container">
                 <h3>Discord</h3><br>
-                <i class = "ri-discord-fill">   </i>
+                <i class="ri-discord-fill"> </i>
                 <h2>Join the conversation.</h2>
                 <p></p>
             </div>
         </div>
 
-    <!-- Footer -->
-    <footer class="w3-container w3-theme-dark w3-padding-16">
-        <h3>Footer</h3>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-        <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
-            <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
-            <a class="w3-text-white" href="#pageHeader"><span class="w3-xlarge">
-                    <i class="fa fa-chevron-circle-up"></i></span></a>
-        </div>
-        <p>Remember to check out our  <a href="w3css_references.asp" class="w3-btn w3-theme-light"
-                target="_blank">W3.CSS Reference</a></p>
-    </footer>
+        <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+        <script src="w3PageFunctions.js"></script>
 
-    <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
-    <script src="w3PageFunctions.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-<script>
-VANTA.NET({
-  el: "#pageHeader",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: "#008000",
-  backgroundColor: "#000000",
-})
-</script>
+        <script>
+            VANTA.NET({
+                el: "#pageHeader",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: "#008000",
+                backgroundColor: "#000000",
+            })
+        </script>
 
 </body>
 
