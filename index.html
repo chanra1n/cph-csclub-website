@@ -2,9 +2,17 @@
 <html>
 
 <head>
-    <title>W3.CSS Template</title>
+    <title>Cal Poly Humboldt - CS Club</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Cal Poly Humboldt - CS Club">
+<meta name="description" content="Meet new people with a similar interest in technology.">
+<meta name="keywords" content="computer, computer science, college, club, humboldt, education, community, coding, programming, ai, artificial intelligence">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="revisit-after" content="30 days">
+<meta name="author" content="Chan Rain">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -112,6 +120,32 @@
             outline-color: green;
 
         }
+
+
+        #mySidebar {
+            font-family: 'Poppins', sans-serif;
+            display: none;
+            position: fixed;
+            z-index: 1000000;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 250px;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        #closebutton {
+            position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 0px;
+    color: white;
+    background-color: #008000!important;
+        }
+
     </style>
 </head>
 
@@ -119,12 +153,7 @@
 
     <!-- Side Navigation -->
     <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
-        <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
-        <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
-        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button">Link 3</a>
-        <a href="#" class="w3-bar-item w3-button">Link 4</a>
+        <button class="w3-button" id = "closebutton" onclick="w3_close()"><i class = "ri-close-fill"></i></button>
     </nav>
 
     <!-- Header -->
