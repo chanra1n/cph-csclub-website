@@ -6,13 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="Cal Poly Humboldt - CS Club">
-<meta name="description" content="Meet new people with a similar interest in technology.">
-<meta name="keywords" content="computer, computer science, college, club, humboldt, education, community, coding, programming, ai, artificial intelligence">
-<meta name="robots" content="index, follow">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="language" content="English">
-<meta name="revisit-after" content="30 days">
-<meta name="author" content="Chan Rain">
+    <meta name="description" content="Meet new people with a similar interest in technology.">
+    <meta name="keywords"
+        content="computer, computer science, college, club, humboldt, education, community, coding, programming, ai, artificial intelligence">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+    <meta name="author" content="Chan Rain">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -21,144 +22,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Honk&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pageStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-    <style>
-        body,
-        html {
-            font-family: 'Poppins', sans-serif;
-            background-color: black;
-            color: white;
-        }
-
-
-        h1 {
-            font-family: 'Poppins', sans-serif;
-
-        }
-
-
-        .w3-card {
-            font-family: 'Poppins';
-            background-color: #1a1a1a;
-            color: white;
-            border: none;
-            overflow: hidden;
-            text-align: left;
-            display: inline-block;
-            margin-bottom:15px;
-        }
-
-        button {
-            background-color: #1a1a1a !important;
-            border-radius: 100vmin;
-        }
-
-        .w3-card h1 {}
-
-        h2 {
-            font-family: 'Poppins';
-        }
-
-        .w3-card h2 {}
-
-        h3 {
-            font-family: 'Poppins';
-        }
-
-        .w3-card h3 {
-            font-weight: 900;
-            font-family: 'DM Sans';
-        }
-
-        h4 {
-            font-family: 'Poppins';
-        }
-
-        .w3-card h4 {}
-
-        p {}
-
-        .w3-card p {
-            padding: 5px;
-            padding-left: 0px;
-            padding-right: 0px;
-            margin-top: 10px;
-            font-size: 16px;
-        }
-
-        a {}
-
-        .w3-card a {}
-
-
-
-        #discordbutton {
-            font-weight: bold;
-            font-family: 'DM Sans', sans-serif;
-            width: fit-content;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            padding: 10px 30px;
-            background-color: #5865F2 !important;
-            max-width: 95%;
-            font-size: 20px !important;
-        }
-
-        .big-title {
-            font-weight: 900;
-            filter: drop-shadow(5px 5px 0px #008000);
-            font-size: 47.5px !important;
-        }
-
-        .w3-card hr {
-            margin: 0px;
-            border: 1px solid green;
-            color: green;
-            outline-color: green;
-
-        }
-
-
-        #mySidebar {
-            font-family: 'Poppins', sans-serif;
-            display: none;
-            position: fixed;
-            z-index: 1000000;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 250px;
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.3s;
-            padding-top:0px!important;
-        }
-
-        #closebutton {
-            border-radius: 0px;
-    color: white;
-    background-color: #008000!important;
-    width: 100%;
-    text-align: right;
-    margin: 0px;
-    vertical-align: top;
-    margin-bottom:10px;
-        }
-
-    </style>
 </head>
 
 <body>
 
     <!-- Side Navigation -->
     <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
-        <button class="w3-button" id = "closebutton" onclick="w3_close()"><i class = "ri-close-fill"></i></button>
+        <button class="w3-button" id="closebutton" onclick="w3_close()"><i class="ri-close-fill"></i></button>
         <button id="discordbutton" class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey"
-        onclick="window.location.href = 'https://discord.com/invite/Q753n9UJ'"><i
-            class="ri-discord-fill"></i> Join our Discord Server</button>
+            onclick="window.location.href = 'https://discord.com/invite/Q753n9UJ'"><i class="ri-discord-fill"></i> Join
+            our Discord Server</button>
     </nav>
 
     <!-- Header -->

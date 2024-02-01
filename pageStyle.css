@@ -1,0 +1,93 @@
+        body,
+        html {
+            font-family: 'Poppins', sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+
+        .w3-card {
+            font-family: 'Poppins';
+            background-color: #1a1a1a;
+            color: white;
+            border: none;
+            overflow: hidden;
+            text-align: left;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #1a1a1a !important;
+            border-radius: 100vmin;
+        }
+
+        .w3-card h3 {
+            font-weight: 900;
+            font-family: 'DM Sans';
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .w3-card p {
+            padding: 5px;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        #discordbutton {
+            font-weight: bold;
+            font-family: 'DM Sans', sans-serif;
+            width: fit-content;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 10px 30px;
+            background-color: #5865F2 !important;
+            max-width: 95%;
+            font-size: 20px !important;
+        }
+
+        .big-title {
+            font-weight: 900;
+            filter: drop-shadow(5px 5px 0px #008000);
+            font-size: 47.5px !important;
+        }
+
+        .w3-card hr {
+            margin: 0px;
+            border: 1px solid green;
+            color: green;
+            outline-color: green;
+
+        }
+
+
+        #mySidebar {
+            font-family: 'Poppins', sans-serif;
+            display: none;
+            position: fixed;
+            z-index: 1000000;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 250px;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 0px !important;
+        }
+
+        #closebutton {
+            border-radius: 0px;
+            color: white;
+            background-color: #008000 !important;
+            width: 100%;
+            text-align: right;
+            margin: 0px;
+            vertical-align: top;
+            margin-bottom: 10px;
+        }
