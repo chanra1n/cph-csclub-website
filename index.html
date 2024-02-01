@@ -34,15 +34,12 @@
 
         .w3-card {
             font-family: 'Poppins';
-            background-color: #1a1a1a;
-            color: white;
-            border-radius: 10px;
-            border: 2.5px solid #008000;
-            filter: drop-shadow(5px 5px 0px #008000) !important;
-            overflow: hidden;
-            text-align: left;
-            aspect-ratio:1/1;
-            height:auto;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    overflow: hidden;
+    text-align: left;
+    display: inline-block;
         }
 
         button {
@@ -62,7 +59,10 @@
             font-family: 'Poppins';
         }
 
-        .w3-card h3 {}
+        .w3-card h3 {
+            font-weight: 900;
+            font-family: 'DM Sans';
+        }
 
         h4 {
             font-family: 'Poppins';
@@ -72,7 +72,13 @@
 
         p {}
 
-        .w3-card p {}
+        .w3-card p {
+            padding: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 10px;
+    font-size: 16px;
+        }
 
         a {}
 
@@ -93,9 +99,17 @@
         }
 
         .big-title {
-            font-weight:900;
-            filter:drop-shadow(5px 5px 0px #008000);
-            font-size:47.5px!important;
+            font-weight: 900;
+            filter: drop-shadow(5px 5px 0px #008000);
+            font-size: 47.5px !important;
+        }
+
+        .w3-card hr {
+            margin:0px;
+            border:1px solid green;
+            color:green;
+            outline-color:green;
+
         }
     </style>
 </head>
@@ -123,43 +137,51 @@
                     onclick="window.location.href = 'https://discord.com/invite/Q753n9UJ'"><i
                         class="ri-discord-fill"></i> Join our Discord Server</button>
                 <br>
-                <br>
+
             </div>
         </div>
     </header>
 
 
-    <div class="w3-row-padding w3-center w3-margin-top" style="padding:50px;padding-top:0px;padding-bottom:0px;">
+    <div class="w3-row-padding w3-center w3-margin-top" style="    padding: 3vw;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;">
+
+<div class="w3-third">
+    <div class="w3-card w3-container">
+        <h3> <i class="ri-discord-fill"> </i> Why CS Club?</h3>
+        <hr>
+        <p>Participate in fun and engaging events, or just come and meet
+            new people that
+            have the same interest in technology as you do.
+        </p>
+    </div>
+</div>
+
         <div class="w3-third">
             <div class="w3-card w3-container">
-                <h3>Discord</h3><br>
-                <i class="ri-discord-fill"> </i>
-                <p>Join the conversation.</p>
-                <button></button>
+                <h3> <i class="ri-discord-fill"> </i> Why CS Club?</h3>
+                <hr>
+                <p>Participate in fun and engaging events, or just come and meet
+                    new people that
+                    have the same interest in technology as you do.
+                </p>
             </div>
         </div>
 
         <div class="w3-third">
             <div class="w3-card w3-container">
-                <h3>Why CS Club?</h3><br>
-                <i class="ri-discord-fill"> </i>
-                <h2>Our goal is to create a welcoming atmosphere 
-                    for everyone while creating awesome and engaging events for everyone to enjoy.
-                     Come join the club to help participate in creating fun and engaging events, or just come and meet new people that 
-                     have the same interest in technology as you do!</h2>
-                <p></p>
+                <h3> <i class="ri-question-line"></i> Why CS Club?</h3>
+                <hr>
+                <p>Participate in fun and engaging events, or just come and meet
+                    new people that
+                    have the same interest in technology as you do.
+                </p>
             </div>
         </div>
 
-        <div class="w3-third">
-            <div class="w3-card w3-container">
-                <h3>Discord</h3><br>
-                <i class="ri-discord-fill"> </i>
-                <h2>Join the conversation.</h2>
-                <p></p>
-            </div>
-        </div>
-
+        <br><br>
         <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
         <script src="w3PageFunctions.js"></script>
 
