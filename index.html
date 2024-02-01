@@ -134,16 +134,18 @@
             background-color: #111;
             overflow-x: hidden;
             transition: 0.3s;
-            padding-top: 60px;
+            padding-top:0px!important;
         }
 
         #closebutton {
-            position: fixed;
-    top: 0;
-    right: 0;
-    border-radius: 0px;
+            border-radius: 0px;
     color: white;
     background-color: #008000!important;
+    width: 100%;
+    text-align: right;
+    margin: 0px;
+    vertical-align: top;
+    margin-bottom:10px;
         }
 
     </style>
@@ -154,6 +156,9 @@
     <!-- Side Navigation -->
     <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
         <button class="w3-button" id = "closebutton" onclick="w3_close()"><i class = "ri-close-fill"></i></button>
+        <button id="discordbutton" class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey"
+        onclick="window.location.href = 'https://discord.com/invite/Q753n9UJ'"><i
+            class="ri-discord-fill"></i> Join our Discord Server</button>
     </nav>
 
     <!-- Header -->
