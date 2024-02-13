@@ -1,3 +1,13 @@
+        @font-face {
+            font-family: 'prib';
+            src: url('prib.ttf');
+        }
+
+        @font-face {
+            font-family: 'syne';
+            src: url('syne.ttf');
+        }
+
         body,
         html {
             font-family: 'Poppins', sans-serif;
@@ -49,6 +59,7 @@
             background-color: #5865F2 !important;
             max-width: 95%;
             font-size: 20px !important;
+            margin-bottom: -5vh;
         }
 
         #discordButton:hover {
@@ -96,4 +107,10 @@
             margin: 0px;
             vertical-align: top;
             margin-bottom: 10px;
+        }
+
+        #logo {
+            width: 60%;
+            max-width: 35vh;
+            margin-bottom: 5vh;
         }
