@@ -18,7 +18,7 @@
 
         .w3-card {
             font-family: 'Poppins';
-            background-color: #1a1a1a;
+            background-color: #004c46;
             color: white;
             border: none;
             overflow: hidden;
@@ -59,7 +59,7 @@
             background-color: #5865F2 !important;
             max-width: 95%;
             font-size: 20px !important;
-            margin-bottom: -5vh;
+            margin-bottom: -7.5vh;
         }
 
         #discordButton:hover {
@@ -70,15 +70,15 @@
 
         .big-title {
             font-weight: 900;
-            filter: drop-shadow(5px 5px 0px #008000);
+            filter: drop-shadow(5px 5px 0px #014C46);
             font-size: 47.5px !important;
         }
 
         .w3-card hr {
             margin: 0px;
-            border: 1px solid green;
-            color: green;
-            outline-color: green;
+            border: 1px solid #fec62c;
+            color: #fec62c;
+            outline-color: #fec62c;
 
         }
 
@@ -101,7 +101,7 @@
         #closebutton {
             border-radius: 0px;
             color: white;
-            background-color: #008000 !important;
+            background-color: #014C46 !important;
             width: 100%;
             text-align: right;
             margin: 0px;
@@ -113,4 +113,10 @@
             width: 60%;
             max-width: 35vh;
             margin-bottom: 5vh;
+            outline: 25px solid #000000;
+            border-radius:100%;
+        }
+
+        .vanta-canvas {
+            top:-5vh!important;
         }

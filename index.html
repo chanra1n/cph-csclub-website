@@ -25,8 +25,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="pageStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
 </head>
 
 <body>
@@ -43,11 +43,11 @@
     <header class="w3-container w3-theme w3-padding" id="pageHeader">
         <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>
         <div class="w3-center">
-            <img src = "FLT.png" id = "logo" alt="CS Club Logo" >
+            <img src="FLT.png" id="logo" alt="CS Club Logo">
             <div class="w3-padding-16">
                 <button id="discordbutton" class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey"
-                    onclick="window.location.href = 'https://discord.gg/BFcGatqw6d'"><i
-                        class="ri-discord-fill"></i> Join our Discord Server</button>
+                    onclick="window.location.href = 'https://discord.gg/BFcGatqw6d'"><i class="ri-discord-fill"></i>
+                    Join our Discord Server</button>
                 <br>
                 <br>
 
@@ -94,18 +94,21 @@
         <script src="w3PageFunctions.js"></script>
 
         <script>
-            VANTA.NET({
+            VANTA.TRUNK({
                 el: "#pageHeader",
                 mouseControls: true,
                 touchControls: true,
                 gyroControls: false,
                 minHeight: 200.00,
                 minWidth: 200.00,
-                scale: 1.00,
+                scale: 2.00,
                 scaleMobile: 1.00,
-                color: "#008000",
-                backgroundColor: "#000000",
+                spacing: 10,
+                chaos: 1.00,
+                color: "#014C46a0",
+                backgroundColor: 0x0,
             })
+
         </script>
 
 </body>
