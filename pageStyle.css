@@ -1,12 +1,3 @@
-        @font-face {
-            font-family: 'prib';
-            src: url('prib.ttf');
-        }
-
-        @font-face {
-            font-family: 'syne';
-            src: url('syne.ttf');
-        }
 
         body,
         html {
@@ -28,7 +19,7 @@
         }
 
         button {
-            background-color: #1a1a1a !important;
+            background-color: #1a1a1a!important;
             border-radius: 100vmin;
         }
 
@@ -49,7 +40,29 @@
             font-size: 16px;
         }
 
-        #discordbutton {
+        .w3-card button {
+            width: 100%;
+            padding: 10px;
+            color: white;
+            font-family: 'Poppins';
+            font-weight: bolder;
+            border: none;
+            border-radius: 0px;
+            margin: 10px;
+            margin-left: 0px;
+            margin-right: 0px;
+            cursor:pointer;
+            outline: 2px solid #fec62c;
+            background-color:#1a1a1a!important;
+            transform: scale(1);
+        }
+
+        .w3-card button:hover {
+            transform:scale(1.025);
+            background-color:#2a2a2a!important;
+        }
+
+        #discordbutton, #discordbutton2 {
             font-weight: bold;
             font-family: 'DM Sans', sans-serif;
             width: fit-content;
@@ -62,7 +75,7 @@
             margin-bottom: -7.5vh;
         }
 
-        #discordButton:hover {
+        #discordButton:hover, #discordbutton2:hover {
             color:white!important;
             transform:scale(1.1);
 
