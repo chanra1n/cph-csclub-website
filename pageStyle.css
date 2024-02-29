@@ -42,24 +42,19 @@
 
         .w3-card button {
             width: 100%;
-            padding: 10px;
-            color: white;
-            font-family: 'Poppins';
-            font-weight: bolder;
+            box-sizing: border-box;
+            background-color: #fec62c!important;
             border: none;
             border-radius: 0px;
-            margin: 10px;
-            margin-left: 0px;
-            margin-right: 0px;
+            font-weight:bolder;
+            padding:10px;
             cursor:pointer;
-            outline: 2px solid #fec62c;
-            background-color:#1a1a1a!important;
-            transform: scale(1);
+            color:black;
+            margin-bottom:15px;
         }
 
         .w3-card button:hover {
             transform:scale(1.025);
-            background-color:#2a2a2a!important;
         }
 
         #discordbutton, #discordbutton2 {
