@@ -305,3 +305,74 @@
   .rdp-day_range_middle {
     border-radius: 0;
   }
+
+
+
+
+  @font-face {
+    font-family: 'prib';
+    src: url('../prib.ttf');
+}
+
+@font-face {
+    font-family: 'syne';
+    src: url('../syne.ttf');
+}
+
+body, html {
+background-color:#004c46!important;
+font-family: "Poppins", sans-serif!important;
+}
+
+#mySidebar {
+background-color: black!important;
+color:white!important;
+}
+
+.w3-main {
+background-color: #004c46!important;
+
+}
+
+hr {
+margin: 0px;
+    border: 1px solid #fec62c;
+    color: #fec62c;
+    outline-color: #fec62c;
+    margin-bottom:15px;
+}
+
+.w3-bar-block {
+background-color:black;
+}
+
+
+.post h1 {
+font-size:20px;
+}
+
+.post button {
+width: 100%;
+box-sizing: border-box;
+background-color: #fec62c!important;
+border: none;
+border-radius: 0px;
+font-weight:bolder;
+padding:10px;
+cursor:pointer;
+color:black;
+
+}
+
+.post p {
+
+}
+
+.post .w3-black {
+padding: 20px;
+padding-top: 5px;
+}
+
+.post hr {
+border-style:dashed;
+}
