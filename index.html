@@ -42,17 +42,10 @@
 
 <body>
 
-    <!-- Side Navigation -->
-    <nav class="w3-sidebar w3-bar-block w3-animate-left w3-center" style="display:none" id="mySidebar">
-        <button class="w3-button" id="closebutton" onclick="w3_close()"><i class="ri-close-fill"></i></button>
-        <button id="discordbutton" class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey"
-            onclick="window.location.href = 'https://csclubhumboldt.org/discordinvite'"><i class="ri-discord-fill"></i> Join
-            our Discord Server</button>
-    </nav>
 
     <!-- Header -->
     <header class="w3-container w3-theme w3-padding" id="pageHeader">
-        <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>
+        <i onclick="w3_open()" style = "opacity:0%;pointer-events:none!important" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>
         <div class="w3-center">
             <img src="FLT.png" id="logo" alt="CS Club Logo">
             <div class="w3-padding-16">
