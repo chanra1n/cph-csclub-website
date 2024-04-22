@@ -123,20 +123,28 @@ VANTA.TRUNK({
             })
 
 
-function create_post(title, content, image, button, link, size, show) {
-
+            function create_post(title, content, image, button, link, size, show) {
+  // if size is half, then display block, else display as normal
+  var block_inline = size == 'half' ? 'block' : 'inline-block';
   var show_post = show ? '100%' : '0%';
+  var display_button = "block";
   var pointer_events = 'auto';
+  var hide_padding = "";
+  // if no button text is provided, then don't show the button
+    if (button == "") {
+        display_button = "none";
+        hide_padding = "padding-bottom:5px";
+    }
   if (show_post == '0%') {
     pointer_events = 'none';
   }
   var structure = `
-  <div class="w3-${size} w3-container w3-margin-bottom post" style = "opacity:${show_post};pointer-events:${pointer_events}">
-      <div class="w3-container w3-black">
+  <div class="w3-${size} w3-container w3-margin-bottom post" style = "display:${block_inline};opacity:${show_post};pointer-events:${pointer_events};">
+      <div class="w3-container w3-black" style = "${hide_padding}">
         <h1><b>${title}</b></h1>
         <hr>
         <p>${content}</p>
-        <button onclick = "window.location.href = '${link}'">${button} <i style = "margin-left:5px" class="ri-external-link-fill"></i></button>
+        <button style = "display:${display_button}" onclick = "window.location.href = '${link}'">${button} <i style = "margin-left:5px" class="ri-external-link-fill"></i></button>
       </div>
     </div>
   </div>
@@ -146,27 +154,11 @@ function create_post(title, content, image, button, link, size, show) {
 }
 
 
-create_post("Hackathon 2024 Event Info", 
-`<i style = "margin-right:5px" class="ri-calendar-fill"></i> <b style = "font-size:16px">April 13th & 14th</b><br>
- <i style = "margin-right:5px" class="ri-time-fill"></i> <b style = "font-size:16px">11 AM - 7 PM, 11 AM - 5 PM</b><br>
- <i style = "margin-right:5px" class="ri-map-pin-2-fill"></i> <b style = "font-size:16px">Scholar's Lab, Campus Library</b>`, 
+create_post("Hackathon 2024 - Results", 
+`It's over! The <b>2024 Hackathon</b> has concluded. Thanks to everyone who participated, and to those who helped make it happen.`, 
 "", 
-"About", 
-"https://docs.google.com/document/d/1TlnXWs7-T2XJX1Goa3mfP0O1V0Kfdq_W0Qv4LWApqB4/edit#heading=h.1xdkpdige362", 'half', true);
-
-
-create_post("Sign Up", 
-"Make sure to sign up if you're interested in participating.", 
 "", 
-"Sign Up", 
-"https://docs.google.com/spreadsheets/d/1m3V6ZgO1fKoWAgQ7PI54QFZM4EhKMN_73DF2Ecxn_K0/edit", 'quarter', true);
-
-
-create_post("Discord", 
-"Form teams, ask questions, and get updates on the event.", 
-"", 
-"Server Invite", 
-"https://csclubhumboldt.org/discordinvite", 'quarter', true);
+"", 'half', true);
 
 
 
