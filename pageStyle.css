@@ -27,6 +27,7 @@ button {
 .w3-card h3 {
     font-weight: 900;
     font-family: 'DM Sans';
+    font-size:22px;
 }
 
 .w3-card h3 i {
@@ -134,7 +135,7 @@ h4 {
 #logo {
     border-radius: 100%;
     width: 90%;
-    max-width: 50vh;
+    max-width: 42.5vh;
     box-sizing: border-box;
     border: 25px solid #000000a0;
     outline: 25px solid #00000050;
