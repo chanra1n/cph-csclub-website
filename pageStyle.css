@@ -1,147 +1,231 @@
-
-        body,
-        html {
-            font-family: 'Poppins', sans-serif;
-            background-color: black;
-            color: white;
-        }
-
-
-        .w3-card {
-            font-family: 'Poppins';
-            background-color: #004c46;
-            color: white;
-            border: none;
-            overflow: hidden;
-            text-align: left;
-            display: inline-block;
-            width: 100%;
-            margin-bottom: 8px;
-            border-radius: 15px;
-        }
-
-        button {
-            background-color: #1a1a1a!important;
-            border-radius: 100vmin;
-        }
-
-        .w3-card h3 {
-            font-weight: 900;
-            font-family: 'DM Sans';
-        }
-
-        .w3-card h3 i {
-            display: inline-block;
-            line-height: 1;
-            margin-right: 5px;
-            font-weight: 100;
-        }
-
-        h1, h2, h3, h4 {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .w3-card p {
-            padding: 5px;
-            padding-left: 0px;
-            padding-right: 0px;
-            margin-top: 10px;
-            font-size: 15px;
-        }
-
-        .w3-card button {
-            width: 100%;
-            box-sizing: border-box;
-            background-color: #fec62c!important;
-            border: none;
-            border-radius: 0px;
-            font-weight: bolder;
-            padding: 10px;
-            cursor: pointer;
-            color: black;
-            margin-bottom: 15px;
-            border-radius: 100vmin;
-        }
-
-        .w3-card button:hover {
-            transform:scale(1.025);
-        }
-
-        #discordbutton, #discordbutton2 {
-            font-weight: bold;
-            font-family: 'DM Sans', sans-serif;
-            width: fit-content;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            padding: 10px 30px;
-            background-color: #5865F2 !important;
-            max-width: 95%;
-            font-size: 20px !important;
-            margin-bottom: -7.5vh;
-        }
-
-        #discordButton:hover, #discordbutton2:hover {
-            color:white!important;
-            transform:scale(1.1);
-
-        }
-
-        .big-title {
-            font-weight: 900;
-            filter: drop-shadow(5px 5px 0px #014C46);
-            font-size: 47.5px !important;
-        }
-
-        .w3-card hr {
-            margin: 0px;
-            border: 1px solid #fec62c;
-            color: #fec62c;
-            outline-color: #fec62c;
-
-        }
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+}
 
 
-        #mySidebar {
-            font-family: 'Poppins', sans-serif;
-            display: none;
-            position: fixed;
-            z-index: 1000000;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 250px;
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.3s;
-            padding-top: 0px !important;
-        }
+.w3-card {
+    font-family: 'Poppins';
+    background-color: #004c46;
+    color: white;
+    border: none;
+    overflow: hidden;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 8px;
+    border-radius: 15px;
+}
 
-        #closebutton {
-            border-radius: 0px;
-            color: white;
-            background-color: #014C46 !important;
-            width: 100%;
-            text-align: right;
-            margin: 0px;
-            vertical-align: top;
-            margin-bottom: 10px;
-        }
+button {
+    background-color: #1a1a1a !important;
+    border-radius: 100vmin;
+}
 
-        #logo {
-            border-radius: 100%;
-            width: 90%;
-            max-width: 50vh;
-            box-sizing: border-box;
-            border: 25px solid #000000a0;
-            outline: 25px solid #00000050;
-        }
+.w3-card h3 {
+    font-weight: 900;
+    font-family: 'DM Sans';
+}
 
-        ul {
-            padding-left:17.5px;
-        }
+.w3-card h3 i {
+    display: inline-block;
+    line-height: 1;
+    margin-right: 5px;
+    font-weight: 100;
+}
 
-        #canvasElement {
-            position:fixed!important;
-            top:0;
-            width:100%;
-        }
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.w3-card p {
+    padding: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.w3-card button {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fec62c !important;
+    border: none;
+    border-radius: 0px;
+    font-weight: bolder;
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+    margin-bottom: 15px;
+    border-radius: 100vmin;
+}
+
+.w3-card button:hover {
+    transform: scale(1.025);
+}
+
+#discordbutton,
+#discordbutton2 {
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    width: fit-content;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px 30px;
+    background-color: #5865F2 !important;
+    max-width: 95%;
+    font-size: 20px !important;
+    margin-bottom: -7.5vh;
+}
+
+#discordButton:hover,
+#discordbutton2:hover {
+    color: white !important;
+    transform: scale(1.1);
+
+}
+
+.big-title {
+    font-weight: 900;
+    filter: drop-shadow(5px 5px 0px #004c46);
+    font-size: 47.5px !important;
+}
+
+.w3-card hr {
+    margin: 0px;
+    border: 1px solid #fec62c;
+    color: #fec62c;
+    outline-color: #fec62c;
+
+}
+
+
+#mySidebar {
+    font-family: 'Poppins', sans-serif;
+    display: none;
+    position: fixed;
+    z-index: 1000000;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 0px !important;
+}
+
+#closebutton {
+    border-radius: 0px;
+    color: white;
+    background-color: #004C46 !important;
+    width: 100%;
+    text-align: right;
+    margin: 0px;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+#logo {
+    border-radius: 100%;
+    width: 90%;
+    max-width: 50vh;
+    box-sizing: border-box;
+    border: 25px solid #000000a0;
+    outline: 25px solid #00000050;
+}
+
+ul {
+    padding-left: 17.5px;
+}
+
+#canvasElement {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+}
+
+#pageContent {
+    background-color: #00000050;
+    backdrop-filter: blur(10px);
+    padding-top: 16px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+#pageContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.w3-card {
+    box-sizing: border-box;
+}
+
+.w3-quarter {
+    max-width: 100%;
+    flex: 1 1 300px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+footer {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+footer .socialsBar {
+    display: flex;
+    align-items: center;
+    float:left;
+}
+
+footer .socialsBar i {
+    font-size: 20px;
+    margin: 4px;
+    background-color: #004c46;
+    padding: 7.5px;
+    border-radius: 50%;
+    font-weight: 900;
+    color: #fec62c;
+    line-height: normal;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+}
+
+footer .socialsBar i:hover {
+    transform: scale(1.1);
+}
+
+footer .rightbar {
+    display: flex;
+    align-items: center;
+    float: right;
+    color: #004c46;
+    font-weight: 600;
+    border: 3px solid #004c46;
+    border-radius: 100vmin;
+    padding: 8px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 0;
+    margin: 4px;
+    margin-right: 0;
+}

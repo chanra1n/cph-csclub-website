@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="favicon"  href="../favi_test.png">
+    <link rel="icon" type="favicon" href="../favi_test.png">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Honk&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour&display=swap"
         rel="stylesheet">
@@ -50,7 +50,7 @@
     <meta name="mobile-web-app-capable" content="yes">
 
     <style>
-                @font-face {
+        @font-face {
             font-family: 'prib';
             src: url('prib.ttf');
         }
@@ -62,22 +62,22 @@
     </style>
 </head>
 
-<body id = "body">
+<body id="body">
 
 
     <!-- Header -->
-    <header class="w3-container w3-theme" id="pageHeader" style = "position:sticky;top:0;">
-        
-        <div class="w3-center w3-padding" >
+    <header class="w3-container w3-theme" id="pageHeader" style="position:sticky;top:0;">
+
+        <div class="w3-center w3-padding">
             <img src="FLT.png" id="logo" alt="CS Club Logo">
-           
+
         </div>
     </header>
 
 
-    <div class="w3-row-padding w3-center w3-margin-top" style = "background-color:#00000050;backdrop-filter: blur(10px);">
+    <div class="w3-row-padding w3-center" id="pageContent">
 
-        <div class="w3-third">
+        <div class="w3-quarter">
             <div class="w3-card w3-container">
                 <h3> <i class="ri-question-line"> </i> Why CS Club?</h3>
                 <hr>
@@ -87,49 +87,132 @@
             </div>
         </div>
 
-        <div class="w3-third">
+        <div class="w3-quarter">
             <div class="w3-card w3-container">
                 <h3> <i class="ri-calendar-line"></i> Current Events</h3>
                 <hr>
                 <ul>
                     <li><b>Club Meetings</b> - Wednesdays, 6:00-7:30 PM [BSS 302]</li>
                 </ul>
-                <button onclick = "window.location.href = 'activities/index.html'">Club Activities <i style = "margin-left:5px" class="ri-external-link-fill"></i></button>
+                <button onclick="window.location.href = 'activities/index.html'">Club Activities <i
+                        style="margin-left:5px" class="ri-external-link-fill"></i></button>
             </div>
         </div>
 
-        <div class="w3-third">
+        <div class="w3-quarter">
             <div class="w3-card w3-container">
                 <h3> <i class="ri-discord-fill"></i> Join the server</h3>
                 <hr>
                 <p><b>Say hello on Discord!</b> Stay tuned for event updates and notifications.
                 </p>
-                <button onclick = "window.location.href = 'https://csclubhumboldt.org/discordinvite'">Server Invite <i style = "margin-left:5px" class="ri-external-link-fill"></i></button>
+                <button onclick="window.location.href = 'https://csclubhumboldt.org/discordinvite'">Server Invite <i
+                        style="margin-left:5px" class="ri-external-link-fill"></i></button>
             </div>
         </div>
+    </div>
+    <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+    <script src="w3PageFunctions.js"></script>
 
-        <br><br>
-        <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
-        <script src="w3PageFunctions.js"></script>
+    <script>
+        VANTA.TRUNK({
+            el: "#pageHeader",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 5.00,
+            scaleMobile: 5.00,
+            spacing: 10,
+            chaos: 1.10,
+            color: "#014C46a0",
+            backgroundColor: 0x0,
+        });
 
-        <script>
-            VANTA.TRUNK({
-                el: "#pageHeader",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: true,
-                minHeight: 200.00,
-                minWidth: 200.00,
-                scale: 3.00,
-                scaleMobile: 3.00,
-                spacing: 10,
-                chaos: 1.10,
-                color: "#014C46a0",
-                backgroundColor: 0x0,
-            })
+        // july 24th, 2024 at 11:27 PM - as an example.
+        //var timeOfLastUpdate = "2024-07-24T23:27:00";
 
-        </script>
+        var timeOfLastUpdate = "2024-08-19T00:13:00";
 
+        function calculateTimeDifference() {
+            var lastUpdateTime = document.getElementById("lastUpdateTime");
+            var lastUpdate = new Date(timeOfLastUpdate);
+            var currentTime = new Date();
+
+            
+            if (isNaN(lastUpdate.getTime())) {
+                lastUpdateTime.innerHTML = "0 min. ago";
+                return;
+            }
+
+           
+            var timeDifference = currentTime - lastUpdate;
+
+            
+            var minutes = Math.floor(timeDifference / 60000);
+
+            if (minutes < 1) {
+                lastUpdateTime.innerHTML = "Just now";
+            } else if (minutes == 1) {
+                lastUpdateTime.innerHTML = "1 min. ago";
+            } else if (minutes < 60) {
+                lastUpdateTime.innerHTML = minutes + " min. ago";
+            } else {
+                var hours = Math.floor(minutes / 60);
+                if (hours == 1) {
+                    lastUpdateTime.innerHTML = "1 hour ago";
+                } else if (hours < 24) {
+                    lastUpdateTime.innerHTML = hours + " hours ago";
+                } else {
+                    var days = Math.floor(hours / 24);
+                    if (days == 1) {
+                        lastUpdateTime.innerHTML = "1 day ago";
+                    } else if (days < 7) {
+                        lastUpdateTime.innerHTML = days + " days ago";
+                    } else if (days < 30) {
+                        var weeks = Math.floor(days / 7);
+                        if (weeks == 1) {
+                            lastUpdateTime.innerHTML = "1 week ago";
+                        } else {
+                            lastUpdateTime.innerHTML = weeks + " weeks ago";
+                        }
+                    } else if (days < 365) {
+                        var months = Math.floor(days / 30);
+                        if (months == 1) {
+                            lastUpdateTime.innerHTML = "1 month ago";
+                        } else {
+                            lastUpdateTime.innerHTML = months + " months ago";
+                        }
+                    } else {
+                        var years = Math.floor(days / 365);
+                        if (years == 1) {
+                            lastUpdateTime.innerHTML = "1 year ago";
+                        } else {
+                            lastUpdateTime.innerHTML = years + " years ago";
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        window.onload = function () {
+            calculateTimeDifference();
+        }
+
+
+    </script>
+    <footer class="w3-container" id="pageFooter">
+        <div class = "socialsBar">
+        <i class = "ri-discord-fill" onclick = "window.location.href = 'https://csclubhumboldt.org/discordinvite'"></i>
+        <i class = "ri-instagram-fill" onclick = "window.location.href = 'https://www.instagram.com/humboldtcsclub/'"></i>
+        <i class = "ri-threads-fill" onclick = "window.location.href = 'https://www.threads.net/humboldtcsclub/'"></i>
+        </div>
+        <div class = "rightbar">
+        <p><i class="ri-history-line" style = "margin-right:2.5px"></i> <span id="lastUpdateTime">0 min. ago</span></p>
+        </div>
+    </footer>
+    <br>
 </body>
 
 </html>
