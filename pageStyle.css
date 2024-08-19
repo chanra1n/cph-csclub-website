@@ -15,7 +15,9 @@
             overflow: hidden;
             text-align: left;
             display: inline-block;
-            margin-bottom: 15px;
+            width: 100%;
+            margin-bottom: 8px;
+            border-radius: 15px;
         }
 
         button {
@@ -26,6 +28,13 @@
         .w3-card h3 {
             font-weight: 900;
             font-family: 'DM Sans';
+        }
+
+        .w3-card h3 i {
+            display: inline-block;
+            line-height: 1;
+            margin-right: 5px;
+            font-weight: 100;
         }
 
         h1, h2, h3, h4 {
@@ -46,11 +55,12 @@
             background-color: #fec62c!important;
             border: none;
             border-radius: 0px;
-            font-weight:bolder;
-            padding:10px;
-            cursor:pointer;
-            color:black;
-            margin-bottom:15px;
+            font-weight: bolder;
+            padding: 10px;
+            cursor: pointer;
+            color: black;
+            margin-bottom: 15px;
+            border-radius: 100vmin;
         }
 
         .w3-card button:hover {
@@ -118,15 +128,10 @@
         }
 
         #logo {
-            width: 60%;
-            max-width: 35vh;
-            margin-bottom: 5vh;
-            outline: 25px solid #000000;
-            border-radius:100%;
-        }
-
-        .vanta-canvas {
-            top:-5vh!important;
+            border-radius: 100%;
+            width: 100%;
+            padding: 12.5vw;
+            max-width: 100vh;
         }
 
         ul {
