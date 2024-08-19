@@ -129,12 +129,19 @@
 
         #logo {
             border-radius: 100%;
-            width: 100%;
+            width: 90%;
             max-width: 50vh;
             box-sizing: border-box;
-            border: 30px solid black;
+            border: 25px solid #000000a0;
+            outline: 25px solid #00000050;
         }
 
         ul {
             padding-left:17.5px;
+        }
+
+        #canvasElement {
+            position:fixed!important;
+            top:0;
+            width:100%;
         }

@@ -62,11 +62,11 @@
     </style>
 </head>
 
-<body>
+<body id = "body">
 
 
     <!-- Header -->
-    <header class="w3-container w3-theme" id="pageHeader">
+    <header class="w3-container w3-theme" id="pageHeader" style = "position:sticky;top:0;">
         
         <div class="w3-center w3-padding" >
             <img src="FLT.png" id="logo" alt="CS Club Logo">
@@ -75,7 +75,7 @@
     </header>
 
 
-    <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-row-padding w3-center w3-margin-top" style = "background-color:#00000050;backdrop-filter: blur(10px);">
 
         <div class="w3-third">
             <div class="w3-card w3-container">
@@ -92,7 +92,7 @@
                 <h3> <i class="ri-calendar-line"></i> Current Events</h3>
                 <hr>
                 <ul>
-                    <li><b>Club Meetings</b> - Mondays, 4:30-6:00 PM [BSS 302]</li>
+                    <li><b>Club Meetings</b> - Wednesdays, 6:00-7:30 PM [BSS 302]</li>
                 </ul>
                 <button onclick = "window.location.href = 'activities/index.html'">Club Activities <i style = "margin-left:5px" class="ri-external-link-fill"></i></button>
             </div>
@@ -102,7 +102,7 @@
             <div class="w3-card w3-container">
                 <h3> <i class="ri-discord-fill"></i> Join the server</h3>
                 <hr>
-                <p><b>Come say hello on Discord.</b> Stay tuned for event updates and notifications.
+                <p><b>Say hello on Discord!</b> Stay tuned for event updates and notifications.
                 </p>
                 <button onclick = "window.location.href = 'https://csclubhumboldt.org/discordinvite'">Server Invite <i style = "margin-left:5px" class="ri-external-link-fill"></i></button>
             </div>
@@ -117,13 +117,13 @@
                 el: "#pageHeader",
                 mouseControls: true,
                 touchControls: true,
-                gyroControls: false,
+                gyroControls: true,
                 minHeight: 200.00,
                 minWidth: 200.00,
                 scale: 3.00,
-                scaleMobile: 1.00,
+                scaleMobile: 3.00,
                 spacing: 10,
-                chaos: 1.00,
+                chaos: 1.10,
                 color: "#014C46a0",
                 backgroundColor: 0x0,
             })
