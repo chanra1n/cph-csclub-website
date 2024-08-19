@@ -56,10 +56,12 @@
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:250px;" id="mySidebar"><br>
   <div class="w3-container">
-    <a onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+    <a onclick="w3_close()" class="w3-hide-large w3-left w3-hover-grey" style = "font-size:50px!important;line-height:1;" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img id = "pageLogo" src="../../FLT.png" onclick = "window.location.href = 'https://csclubhumboldt.org'" style="width:100%;padding:25px;cursor:pointer;" class="w3-round"><br><br>
+    <div id = "logoContainer">
+      <img id="pageLogo" src="../../FLT.png" onclick="window.location.href = 'https://csclubhumboldt.org'" class="w3-round"><br><br>
+      </div>
     <h4 style = "font-family:'syne'" ><b>CS Club Activities</b></h4>
   </div>
   <div class="w3-bar-block">
@@ -95,6 +97,21 @@
 </div>
 
 <script>
+
+
+VANTA.TRUNK({
+                el: "#logoContainer",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                scale: 10.00,
+                scaleMobile: 10.00,
+                spacing: 5,
+                chaos: 1.10,
+                color: "#000000",
+                backgroundColor: "transparent"
+            })
+
 // Script to open and close sidebar
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
