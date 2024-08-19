@@ -56,7 +56,7 @@
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:250px;" id="mySidebar"><br>
   <div class="w3-container">
-    <a href="https://csclubhumboldt.org" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+    <a onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
     <img src="../FLT.png" onclick = "window.location.href = 'https://csclubhumboldt.org'" style="width:100%;padding:25px;cursor:pointer;" class="w3-round"><br><br>
@@ -93,6 +93,12 @@
   
 <!-- End page content -->
 </div>
+
+<footer>
+  <i class = "ri-discord-fill" onclick = "window.location.href = 'https://csclubhumboldt.org/discordinvite'"></i>
+  <i class = "ri-instagram-fill" onclick = "window.location.href = 'https://www.instagram.com/humboldtcsclub/'"></i>
+  <i class = "ri-threads-fill" onclick = "window.location.href = 'https://www.threads.net/humboldtcsclub/'"></i>
+</footer>
 
 <script>
 // Script to open and close sidebar
@@ -152,14 +158,6 @@ function create_post(title, content, image, button, link, size, show) {
 
   document.getElementById("postbody").innerHTML += structure;
 }
-
-
-create_post("This Week", 
-`<img src = "https://media.discordapp.net/attachments/889575396171993099/1230664489003913236/woohoo.png?ex=66279e5e&is=66264cde&hm=e6bd08d1ecee53f5a9a6ea1898f9e417e4d320589bee28e90a86f99c85965b3e&=&format=webp&quality=lossless&width=658&height=930" style = "margin-top:-15px;text-align:center;width:100%;padding:20px;padding-left:0px;padding-right:0px;padding-bottom:0px" />
-`, 
-"", 
-"", 
-"", 'third', true);
 
 create_post("Club Meeting Info", 
 `<i style = "margin-right:5px" class="ri-calendar-fill"></i> <b style = "font-size:16px">Mondays / Weekly</b><br>

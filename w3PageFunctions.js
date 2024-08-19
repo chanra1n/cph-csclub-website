@@ -75,6 +75,8 @@ function move() {
 }
 
 
-// 
+// if the page is within a subdirectory named "activities" then the following code will be executed
+
+
 
 
