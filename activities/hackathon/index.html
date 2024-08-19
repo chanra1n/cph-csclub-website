@@ -51,7 +51,7 @@
   <meta name="mobile-web-app-capable" content="yes">
 
 </head>
-<body class="w3-black w3-content" style="max-width:1600px">
+<body class="w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:250px;" id="mySidebar"><br>
@@ -59,7 +59,7 @@
     <a onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="../../FLT.png" onclick = "window.location.href = 'https://csclubhumboldt.org'" style="width:100%;padding:25px;cursor:pointer;" class="w3-round"><br><br>
+    <img id = "pageLogo" src="../../FLT.png" onclick = "window.location.href = 'https://csclubhumboldt.org'" style="width:100%;padding:25px;cursor:pointer;" class="w3-round"><br><br>
     <h4 style = "font-family:'syne'" ><b>CS Club Activities</b></h4>
   </div>
   <div class="w3-bar-block">
@@ -106,21 +106,6 @@ function w3_close() {
     document.getElementById("myOverlay").style.display = "none";
 }
 
-
-VANTA.TRUNK({
-                el: "#mySidebar",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 1000.00,
-                minWidth: 1000.00,
-                scale: 2.00,
-                scaleMobile: 1.00,
-                spacing: 12.5,
-                chaos: 1.00,
-                color: "#014C46a0",
-                backgroundColor: 0x0,
-            })
 
 
             function create_post(title, content, image, button, link, size, show) {
