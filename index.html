@@ -202,6 +202,13 @@
             calculateTimeDifference();
         }
 
+        self.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'visible') {
+        console.log('APP resumed');
+        window.location.reload();
+    }
+});
+
 
     </script>
     <footer class="w3-container" id="pageFooter">
