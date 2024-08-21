@@ -387,14 +387,29 @@ font-size:18px;
 }
 
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: -webkit-fill-available;
-  text-align: right;
-  background-color: transparent;
-  color: #fec62c;
-  font-size: 25px;
+@media (max-width: 767px) {
+  footer {
+    position: sticky;
+    bottom: 0;
+    width: -webkit-fill-available;
+    text-align: right;
+    background-color: #00000000;
+    color: #fec62c;
+    font-size: 25px;
+    backdrop-filter: blur(10px);
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: -webkit-fill-available;
+    text-align: right;
+    background-color: transparent;
+    color: #fec62c;
+    font-size: 25px;
+  }
 }
 
 
