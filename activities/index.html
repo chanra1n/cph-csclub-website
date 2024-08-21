@@ -59,11 +59,13 @@
   <!-- Sidebar/menu -->
   <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:250px;" id="mySidebar"><br>
     <div class="w3-container">
-      <a onclick="w3_close()" class="w3-hide-large w3-left w3-hover-grey" style = "font-size:50px!important;line-height:1;z-index:1000;" title="close menu">
+      <a onclick="w3_close()" class="w3-hide-large w3-left w3-hover-grey"
+        style="font-size:50px!important;line-height:1;z-index:1000;" title="close menu">
         <i class="fa fa-remove"></i>
       </a>
-      <div id = "logoContainer">
-      <img id="pageLogo" src="../FLT.png" onclick="window.location.href = 'https://csclubhumboldt.org'" class="w3-round"><br><br>
+      <div id="logoContainer">
+        <img id="pageLogo" src="../FLT.png" onclick="window.location.href = 'https://csclubhumboldt.org'"
+          class="w3-round"><br><br>
       </div>
       <h4 style="font-family:'syne'"><b>CS Club Activities</b></h4>
     </div>
@@ -154,12 +156,19 @@
         document.getElementById("postbody").innerHTML += structure;
       }
 
-      create_post("Coming Up", 
-`<img src = "../images/current_flyer.png" />
-`, 
-"", 
-"", 
-"", 'third', true);
+      self.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'visible') {
+          console.log('APP resumed');
+          window.location.reload();
+        }
+      });
+
+      create_post("Coming Up",
+        `<img src = "../images/current_flyer.png" />
+`,
+        "",
+        "",
+        "", 'third', true);
 
       create_post("Club Meeting Info",
         `<i style = "margin-right:5px" class="ri-calendar-fill"></i> <b style = "font-size:16px">Thursdays / Weekly</b><br>
@@ -168,8 +177,6 @@
         "",
         "Campus Map",
         "https://www.humboldt.edu/sites/default/files/2023-01/campusmap.pdf", 'quarter', true);
-
-
 
 
     </script>

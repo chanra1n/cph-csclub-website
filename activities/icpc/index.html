@@ -63,9 +63,10 @@
         style="font-size:50px!important;line-height:1;z-index:1000;" title="close menu">
         <i class="fa fa-remove"></i>
       </a>
-      <div id = "logoContainer">
-        <img id="pageLogo" src="../../FLT.png" onclick="window.location.href = 'https://csclubhumboldt.org'" class="w3-round"><br><br>
-        </div>
+      <div id="logoContainer">
+        <img id="pageLogo" src="../../FLT.png" onclick="window.location.href = 'https://csclubhumboldt.org'"
+          class="w3-round"><br><br>
+      </div>
       <h4 style="font-family:'syne'"><b>CS Club Activities</b></h4>
     </div>
     <div class="w3-bar-block">
@@ -149,6 +150,13 @@
 
         document.getElementById("postbody").innerHTML += structure;
       }
+
+      self.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'visible') {
+          console.log('APP resumed');
+          window.location.reload();
+        }
+      });
 
 
       create_post("ICPC 2024 - Results",

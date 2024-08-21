@@ -143,23 +143,19 @@ function w3_close() {
   document.getElementById("postbody").innerHTML += structure;
 }
 
+self.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'visible') {
+        console.log('APP resumed');
+        window.location.reload();
+    }
+});
+
 
 create_post("Hackathon 2024 - Results", 
 `It's over! The <b>2024 Hackathon</b> has concluded. Thanks to everyone who participated, and to those who helped make it happen.`, 
 "", 
 "", 
 "", 'half', true);
-
-
-
-
-
-
-
-
-
-
-
 
 
 
