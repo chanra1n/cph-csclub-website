@@ -353,7 +353,7 @@ background-color:black;
 
 
 .post h1 {
-font-size:20px;
+font-size:18px;
 }
 
 .post button {
@@ -379,6 +379,11 @@ font-size:20px;
   border-radius: 15px;
   max-width: 60vh;
   min-width: -webkit-fill-available;
+}
+
+.post img { 
+  width: -webkit-fill-available;
+  border-radius:5px;
 }
 
 
