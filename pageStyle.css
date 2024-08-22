@@ -229,4 +229,5 @@ footer .rightbar {
     line-height: 0;
     margin: 4px;
     margin-right: 0;
+    cursor:default;
 }

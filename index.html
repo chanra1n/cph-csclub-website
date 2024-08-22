@@ -134,7 +134,7 @@
         // july 24th, 2024 at 11:27 PM - as an example.
         //var timeOfLastUpdate = "2024-07-24T23:27:00";
 
-        var timeOfLastUpdate = "2024-08-22T15:30:00";
+        var timeOfLastUpdate = "2024-08-22T15:57:00";
 
         function calculateTimeDifference() {
             var lastUpdateTime = document.getElementById("lastUpdateTime");
@@ -195,7 +195,39 @@
                     }
                 }
             }
-            
+
+            var updateMonth = lastUpdate.getMonth() + 1;
+            var updateDay = lastUpdate.getDate();
+            var updateYear = lastUpdate.getFullYear();
+            var updateHour = lastUpdate.getHours();
+            var updateMinute = lastUpdate.getMinutes();
+            var ampm = updateHour >= 12 ? 'PM' : 'AM';
+            updateHour = updateHour % 12;
+            updateHour = updateHour ? updateHour : 12;
+
+            var monthNames = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+            var formattedDate = monthNames[updateMonth - 1] + " " + updateDay + getOrdinalSuffix(updateDay) + ", " + updateYear;
+
+            function getOrdinalSuffix(day) {
+                if (day >= 11 && day <= 13) {
+                    return "th";
+                }
+                switch (day % 10) {
+                    case 1:
+                        return "st";
+                    case 2:
+                        return "nd";
+                    case 3:
+                        return "rd";
+                    default:
+                        return "th";
+                }
+            }
+            var formattedTime = updateHour + ":" + (updateMinute < 10 ? "0" : "") + updateMinute + " " + ampm + " (PST)";
+
+            lastUpdateTime.title = "This page was last updated on " + formattedDate + " @ " + formattedTime;
         }
 
         window.onload = function () {
@@ -217,7 +249,7 @@
         <i class = "ri-instagram-fill" onclick = "window.location.href = 'https://www.instagram.com/humboldtcsclub/'"></i>
         <i class = "ri-threads-fill" onclick = "window.location.href = 'https://www.threads.net/humboldtcsclub/'"></i>
         </div>
-        <div class = "rightbar">
+        <div class = "rightbar" >
         <p><i class="ri-history-line" style = "margin-right:2.5px"></i> <span id="lastUpdateTime">Checking...</span></p>
         </div>
     </footer>
