@@ -324,6 +324,10 @@ width:100%;
 height:100%;
 }
 
+body {
+  opacity: 100%!important;
+}
+
 #mySidebar {
   background-color: black!important;
   color: white!important;
@@ -465,27 +469,60 @@ footer i:hover {
   width: 100%;
   box-sizing: border-box;
   overflow:hidden;
+  background-color: #000000;
 }
 
 #portfolio h1 {
-  font-weight:bolder;
+  font-family: 'syne';
+  font-size: 30px;
+  line-height: normal;
+  font-weight: 900;
 }
 
 #portfolio img {
   margin-left:auto!important;
   max-height:100%;
   max-width:100%;
+}
 
+#portfolio a {
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 #postbody {
   position: relative;
   z-index: 2;
-  background-color: #004c4650;
-  backdrop-filter: blur(5px);
+  background-color: #004c46;
+  backdrop-filter: blur(10px);
   padding-top: 16px;
   border-radius: 15px;
-  margin-top: -16px;
   margin-bottom: -16px;
 }
+
+
+/* Flex container for sidebar and main content */
+.container {
+  display: flex; /* Aligns children side by side */
+  margin: 0; /* Removes default body margin */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Sidebar settings */
+.w3-sidebar {
+  width: 250px; /* Fixed width for sidebar */
+  flex: 0 0 250px; /* Prevents shrinking or growing */
+  position: relative; /* Keeps the sidebar in place */
+}
+
+/* Main content settings */
+.w3-main {
+  flex: 1; /* Takes up remaining space */
+  margin-left: 0; /* No extra margin on the left */
+  position:absolute;
+  left: 0px;
+  top:0px;
+}
+
 
