@@ -66,8 +66,10 @@
   </div>
   <div class="w3-bar-block">
     <a href="../../activities/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding" style = "font-weight:bold">               <i class="ri-news-fill" style = "margin-right:5px" ></i> Club News</a>
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding" style = "font-weight:bold;color:#fec62c" ><i class="ri-terminal-box-fill" style = "margin-right:5px"></i> Hackathon</a> 
-    <a href="../icpc/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding" style = "font-weight:bold" >                 <i class="ri-trophy-fill" style = "margin-right:5px"></i> ICPC</a> 
+    <a href="hackathon/index.html" onclick="w3_close()" class="disabled w3-bar-item w3-button w3-padding"
+    style="font-weight:bold;"><i class="ri-terminal-box-fill" style="margin-right:5px"></i> Hackathon</a>
+  <a href="icpc/index.html" onclick="w3_close()" class="disabled w3-bar-item w3-button w3-padding" style="font-weight:bold;">
+    <i class="ri-trophy-fill" style="margin-right:5px"></i> ICPC</a>
   </div>
 
 </nav>
@@ -80,14 +82,13 @@
 
   <!-- Header -->
   <header id="portfolio">
-    <a href="https://csclubhumboldt.org" ><img src="../../FLT.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
     <h1 class = "w3-text-white" style = "font-family:'syne'" ><b>Hackathon News</b></h1>
 
+    
     </div>
   </header>
-  
   <!-- First Photo Grid-->
   <div class="w3-row-padding" id = "postbody" >
 
@@ -101,14 +102,16 @@
 
 // Script to open and close sidebar
 function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+        document.getElementById('postbody').style.opacity = 0.5;
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+        document.getElementById('postbody').style.opacity = 1;
+      }
 
 
 
