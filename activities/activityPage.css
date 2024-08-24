@@ -359,7 +359,7 @@ background-color:black;
 }
 
 .post h1 {
-font-size:18px;
+font-size:24px;
 }
 
 .post button {
@@ -372,6 +372,7 @@ font-size:18px;
   padding: 10px;
   cursor: pointer;
   color: black;
+  font-size: 16px;
 
 }
 
@@ -383,6 +384,7 @@ font-size:18px;
   padding: 20px;
   padding-top: 5px;
   border-radius: 15px;
+  font-size:16px;
 }
 
 .post img { 
