@@ -349,7 +349,12 @@ margin: 0px;
 .w3-bar-block {
 background-color:black;
 }
-
+.post {
+  max-width:375px;
+  padding:8px!important;
+  padding-bottom:0px!important;
+  padding-top:0px!important;
+}
 
 .post h1 {
 font-size:18px;
@@ -376,11 +381,6 @@ font-size:18px;
   padding: 20px;
   padding-top: 5px;
   border-radius: 15px;
-  max-width: 60vh;
-  min-width: -webkit-fill-available;
-  min-width: -moz-available;
-  min-width: -ms-fill-available;
-  min-width: fill-available;
 }
 
 .post img { 
@@ -402,6 +402,9 @@ font-size:18px;
     color: #fec62c;
     font-size: 25px;
     backdrop-filter: blur(10px);
+    padding: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
   }
 }
 
@@ -453,3 +456,38 @@ footer i:hover {
   z-index: -1!important;
   filter:blur(2.5px);
 }
+
+
+#portfolio {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  overflow:hidden;
+}
+
+#portfolio h1 {
+  font-weight:bolder;
+}
+
+#portfolio img {
+  margin-left:auto!important;
+  max-height:100%;
+  max-width:100%;
+
+}
+
+#postbody {
+  position: relative;
+  z-index: 2;
+  background-color: #004c4650;
+  backdrop-filter: blur(5px);
+  padding-top: 16px;
+  border-radius: 15px;
+  margin-top: -16px;
+  margin-bottom: -16px;
+}
+

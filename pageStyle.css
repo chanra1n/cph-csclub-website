@@ -165,6 +165,11 @@ ul {
     flex-wrap: wrap;
 }
 
+#pageHeader {
+    position:sticky;
+    top:0;
+}
+
 .w3-card {
     box-sizing: border-box;
 }
@@ -202,7 +207,7 @@ footer .socialsBar i {
     background-color: #004c46;
     padding: 7.5px;
     border-radius: 50%;
-    font-weight: 900;
+    font-weight: 100;
     color: #fec62c;
     line-height: normal;
     display: inline-flex;
@@ -231,3 +236,40 @@ footer .rightbar {
     margin-right: 0;
     cursor:default;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+    max-width: 1350px;
+    margin: auto;
+  }
+
+
+  #pageContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+  
+
+#pageHeader {
+    flex-grow: 1; /* Allows the header to take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the content vertically */
+    align-items: center; /* Centers the content horizontally */
+  }
+  
+  
+#pageContent {
+    flex-shrink: 0; /* Prevents the .w3-main from shrinking */
+  }
+
+  .vanta-canvas {
+    height:100%!important;
+    border-radius:15px;
+  }
+  
