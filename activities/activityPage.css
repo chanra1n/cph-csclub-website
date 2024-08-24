@@ -458,7 +458,7 @@ footer i:hover {
 }
 
 .w3-bar-block .w3-bar-item {
-  font-size:16px;
+  font-size: 20px;
 }
 
 
@@ -497,7 +497,7 @@ footer i:hover {
   font-family: 'syne';
   font-size: 30px;
   line-height: normal;
-  font-weight: 900;
+  font-weight: 600!important;
 }
 
 #portfolio img {
@@ -552,4 +552,8 @@ footer i:hover {
   pointer-events:none;
 }
 
+.w3-sidebar h4 {
+  font-size: 25px;
+  font-weight: 900!important;
+}
 
