@@ -5,6 +5,14 @@ html {
     color: white;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+    max-width: 1350px;
+    margin: auto;
+}
 
 .w3-card {
     font-family: 'Poppins';
@@ -27,7 +35,7 @@ button {
 .w3-card h3 {
     font-weight: 900;
     font-family: 'DM Sans';
-    font-size:22px;
+    font-size: 22px;
 }
 
 .w3-card h3 i {
@@ -70,27 +78,6 @@ h4 {
     transform: scale(1.025);
 }
 
-#discordbutton,
-#discordbutton2 {
-    font-weight: bold;
-    font-family: 'DM Sans', sans-serif;
-    width: fit-content;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 10px 30px;
-    background-color: #5865F2 !important;
-    max-width: 95%;
-    font-size: 20px !important;
-    margin-bottom: -7.5vh;
-}
-
-#discordButton:hover,
-#discordbutton2:hover {
-    color: white !important;
-    transform: scale(1.1);
-
-}
-
 .big-title {
     font-weight: 900;
     filter: drop-shadow(5px 5px 0px #004c46);
@@ -102,9 +89,7 @@ h4 {
     border: 1px solid #fec62c;
     color: #fec62c;
     outline-color: #fec62c;
-
 }
-
 
 #mySidebar {
     font-family: 'Poppins', sans-serif;
@@ -156,18 +141,22 @@ ul {
     backdrop-filter: blur(10px);
     padding-top: 16px;
     border-radius: 15px 15px 0px 0px;
-}
-
-
-#pageContent {
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-shrink: 0;
 }
 
 #pageHeader {
-    position:sticky;
-    top:0;
+    position: sticky;
+    top: 0;
+    flex-grow: 1; /* Allows the header to take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the content vertically */
+    align-items: center; /* Centers the content horizontally */
 }
 
 .w3-card {
@@ -178,12 +167,10 @@ ul {
     max-width: 100%;
     flex: 1 1 300px;
     box-sizing: border-box;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-
 
 footer {
     display: block;
@@ -198,7 +185,7 @@ footer {
 footer .socialsBar {
     display: flex;
     align-items: center;
-    float:left;
+    float: left;
 }
 
 footer .socialsBar i {
@@ -213,7 +200,7 @@ footer .socialsBar i {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 footer .socialsBar i:hover {
@@ -234,42 +221,11 @@ footer .rightbar {
     line-height: 0;
     margin: 4px;
     margin-right: 0;
-    cursor:default;
+    cursor: default;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 100vh;
-    max-width: 1350px;
-    margin: auto;
-  }
+.vanta-canvas {
+    height: 100% !important;
+    border-radius: 15px;
+}
 
-
-  #pageContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-grow: 1;
-  }
-  
-
-#pageHeader {
-    flex-grow: 1; /* Allows the header to take up remaining space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers the content vertically */
-    align-items: center; /* Centers the content horizontally */
-  }
-  
-  
-#pageContent {
-    flex-shrink: 0; /* Prevents the .w3-main from shrinking */
-  }
-
-  .vanta-canvas {
-    height:100%!important;
-    border-radius:15px;
-  }
-  
