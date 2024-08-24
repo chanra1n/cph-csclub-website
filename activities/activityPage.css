@@ -378,10 +378,16 @@ font-size:18px;
   border-radius: 15px;
   max-width: 60vh;
   min-width: -webkit-fill-available;
+  min-width: -moz-available;
+  min-width: -ms-fill-available;
+  min-width: fill-available;
 }
 
 .post img { 
   width: -webkit-fill-available;
+  width: -moz-available;
+  width: -ms-fill-available;
+  width: fill-available;
   border-radius:5px;
 }
 
