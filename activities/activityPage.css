@@ -523,6 +523,7 @@ footer i:hover {
   border-radius: 15px 15px 0px 0px;
   margin-bottom: -16px;
   transition: all 0.25s;
+  height: 100%;
 }
 
 
