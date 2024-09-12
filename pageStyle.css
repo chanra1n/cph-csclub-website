@@ -5,8 +5,8 @@
 body,
 html {
     font-family: 'Poppins', sans-serif;
-    background-color: black;
-    color: white;
+    background-color: #231F20;
+    color: #ffeee0;
 }
 
 body {
@@ -21,9 +21,9 @@ body {
 }
 
 .w3-card {
-    font-family: 'Poppins';
-    background-color: #004c46;
-    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: #346241;
+    color: #ffeee0;
     border: none;
     overflow: hidden;
     text-align: left;
@@ -41,7 +41,7 @@ button {
 
 .w3-card h3 {
     font-weight: 900;
-    font-family: 'DM Sans';
+    font-family: 'Monarda', sans-serif;
     font-size: 24px;
 }
 
@@ -65,18 +65,19 @@ h4 {
     padding-right: 0px;
     margin-top: 10px;
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .w3-card button {
     width: 100%;
     box-sizing: border-box;
-    background-color: #fec62c !important;
+    background-color: #ffc72c !important;
     border: none;
     border-radius: 0px;
     font-weight: bolder;
     padding: 10px;
     cursor: pointer;
-    color: black;
+    color: #231F20;
     margin-bottom: 15px;
     border-radius: 100vmin;
     font-size:16px;
@@ -88,15 +89,15 @@ h4 {
 
 .big-title {
     font-weight: 900;
-    filter: drop-shadow(5px 5px 0px #004c46);
+    filter: drop-shadow(5px 5px 0px #346241);
     font-size: 47.5px !important;
 }
 
 .w3-card hr {
     margin: 0px;
-    border: 1px solid #fec62c;
-    color: #fec62c;
-    outline-color: #fec62c;
+    border: 1px solid #ffc72c;
+    color: #ffc72c;
+    outline-color: #ffc72c;
 }
 
 #mySidebar {
@@ -116,8 +117,8 @@ h4 {
 
 #closebutton {
     border-radius: 0px;
-    color: white;
-    background-color: #004C46 !important;
+    color: #ffeee0;
+    background-color: #346241 !important;
     width: 100%;
     text-align: right;
     margin: 0px;
@@ -126,12 +127,11 @@ h4 {
 }
 
 #logo {
-    border-radius: 100%;
     width: 90%;
     max-width: 42.5vh;
     box-sizing: border-box;
-    border: 25px solid #000000a0;
-    outline: 25px solid #00000050;
+    padding: 20px;
+    filter: drop-shadow(0px 0px 30px #231F20);
 }
 
 ul {
@@ -145,7 +145,7 @@ ul {
 }
 
 #pageContent {
-    background-color: #00000050;
+    background-color: #231F2050;
     backdrop-filter: blur(10px);
     padding-top: 16px;
     border-radius: 15px 15px 0px 0px;
@@ -187,7 +187,7 @@ footer {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    background-color: black;
+    background-color: #231F20;
 }
 
 footer .socialsBar {
@@ -199,11 +199,11 @@ footer .socialsBar {
 footer .socialsBar i {
     font-size: 20px;
     margin: 4px;
-    background-color: #004c46;
+    background-color: #346241;
     padding: 7.5px;
     border-radius: 50%;
     font-weight: 100;
-    color: #fec62c;
+    color: #ffc72c;
     line-height: normal;
     display: inline-flex;
     align-items: center;
@@ -219,9 +219,9 @@ footer .rightbar {
     display: flex;
     align-items: center;
     float: right;
-    color: #004c46;
+    color: #346241;
     font-weight: 600;
-    border: 3px solid #004c46;
+    border: 3px solid #346241;
     border-radius: 100vmin;
     padding: 8px;
     padding-top: 0;
@@ -234,6 +234,23 @@ footer .rightbar {
 
 .vanta-canvas {
     height: 100% !important;
+}
+
+.uk-modal#qr-modal {
+    align-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.uk-modal#qr-modal .uk-modal-dialog {
+    width: fit-content;
+}
+
+.uk-modal-dialog {
+    transition: all 0.25s ease;
     border-radius: 15px;
 }
 
+#qr-modal img {
+    padding:20px;
+    border-radius:15px;
+}
