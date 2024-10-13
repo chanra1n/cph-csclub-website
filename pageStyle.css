@@ -260,12 +260,24 @@ footer .rightbar {
     background-color: #ffc72c;
     color: black;
     border-radius: 100vmin;
-    padding: 1px;
+    padding: 2.5px;
     font-size: 12px;
     padding-left: 10px;
     padding-right: 10px;
     font-weight: 600;
-    margin: 2.5px;
+    margin: 5px;
     vertical-align: middle;
-    cursor:pointer;
+    cursor: pointer;
+    margin-left: 0px;
+    display: inline-block;
+}
+
+.li-span.left {
+    border-radius: 100vmin 0px 0px 100vmin;
+    margin-left:5px;
+}
+
+.li-span.right {
+    border-radius: 0px 100vmin 100vmin 0px;
+    margin-right:5px;
 }
