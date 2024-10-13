@@ -31,7 +31,8 @@ body {
     width: 100%;
     margin-bottom: 16px;
     border-radius: 15px;
-    font-size:14px;
+    font-size:16px;
+    white-space: normal;
 }
 
 button {
@@ -136,6 +137,7 @@ h4 {
 
 ul {
     padding-left: 17.5px;
+    padding-right:15px;
 }
 
 #canvasElement {
@@ -273,11 +275,9 @@ footer .rightbar {
 }
 
 .li-span.left {
-    border-radius: 100vmin 0px 0px 100vmin;
     margin-left:5px;
 }
 
 .li-span.right {
-    border-radius: 0px 100vmin 100vmin 0px;
     margin-right:5px;
 }

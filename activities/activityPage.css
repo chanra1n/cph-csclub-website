@@ -358,8 +358,8 @@ background-color:#231F20;
 }
 
 .post h1 {
-font-size:24px;
-font-family: 'Monarda', sans-serif;
+  font-size: 20px;
+  font-family: 'Monarda', sans-serif;
 }
 
 .post button {
@@ -495,6 +495,18 @@ footer i:hover {
   background-color: #231F20;
 }
 
+/* Hide the header by default */
+#portfolio {
+  display: none;
+}
+
+/* Show the header only on mobile devices */
+@media only screen and (max-width: 767px) {
+  #portfolio {
+    display: flex;
+  }
+}
+
 #portfolio h1 {
   font-family: 'Monarda';
   font-size: 30px;
@@ -527,7 +539,14 @@ footer i:hover {
   border-radius: 15px 15px 0px 0px;
   margin-bottom: -16px;
   transition: all 0.25s;
-  height: fit-content;
+  height: 125vh;
+  margin-top: 16px;
+}
+
+@media (max-width: 767px) {
+  #postbody {
+    margin-top: 0px;
+  }
 }
 
 
