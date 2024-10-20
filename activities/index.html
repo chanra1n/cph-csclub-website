@@ -68,7 +68,7 @@
           class="w3-round"><br><br>
       </div>
       <h4 style="font-family:'Monarda'"><b>Club Activities</b></h4>
-      <hr>
+      <hr style = "margin-bottom:5px">
     </div>
     <div class="w3-bar-block">
       <a href="https://csclubhumboldt.org" onclick="w3_close()" class="w3-bar-item w3-button w3-padding" style="font-weight:bold;">
@@ -168,14 +168,22 @@
       });
 
 
-      create_post("Coming Up", 
-`<img style = "cursor:pointer" onclick = 'window.location.href = "https://commerce.cashnet.com/HUM-RSO?ITEMCODE=CL-113+FUND1"' src = "../images/current_flyer.png" />
+      create_post("Show your support!", 
+`<img style = "cursor:pointer" onclick = 'window.location.href = "https://commerce.cashnet.com/HUM-RSO?ITEMCODE=CL-113+FUND1"' src = "../images/current_flyer2.png" />
 `, 
 "", 
 "Buy Tickets", 
 "https://commerce.cashnet.com/HUM-RSO?ITEMCODE=CL-113+FUND1", 'third', true);
 
-      create_post("Club Meeting Info",
+      create_post("Coming Up...", 
+`<img style = "cursor:pointer" onclick = 'window.location.href = "https://commerce.cashnet.com/HUM-RSO?ITEMCODE=CL-113+FUND1"' src = "../images/current_flyer.png" />
+`, 
+"", 
+"", 
+"", 'third', true);
+
+
+      /*create_post("Club Meeting Info",
         `<i style = "margin-right:5px" class="ri-calendar-fill"></i> <b style = "font-size:16px">Thursdays / Weekly</b><br>
  <i style = "margin-right:5px" class="ri-time-fill"></i> <b style = "font-size:16px">6:00 - 7:30 PM</b><br>
  <i style = "margin-right:5px" class="ri-map-pin-2-fill"></i> <b style = "font-size:16px">BSS 302</b>`,
@@ -183,7 +191,7 @@
         "Campus Map",
         "https://www.humboldt.edu/sites/default/files/2023-01/campusmap.pdf", 'quarter', true);
 
-
+      */
       window.onload = function() {
         document.body.style.opacity = 1;
       }

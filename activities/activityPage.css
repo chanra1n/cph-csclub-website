@@ -340,11 +340,11 @@ body {
 }
 
 hr {
-margin: 0px;
-    border: 1px solid #ffc72c;
-    color: #ffc72c;
-    outline-color: #ffc72c;
-    margin-bottom:15px;
+  margin: 0px;
+  border: 1px solid #ffc72c;
+  color: #ffc72c;
+  outline-color: #ffc72c;
+  margin-bottom: -5px;
 }
 
 .w3-bar-block {
