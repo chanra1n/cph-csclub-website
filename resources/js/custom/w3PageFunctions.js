@@ -76,6 +76,10 @@ window.onload = function () {
   var timeOfLastUpdate = "2024-10-20T14:20:00";
   getLastCommit('chanra1n', 'cph-csclub-website');
 
+  if (window.location.pathname.includes('activities')) {
+    updateMenuItems();
+  }
+
 }
 
 self.addEventListener('visibilitychange', function () {
@@ -253,3 +257,87 @@ function createPost({ title, content, image = '', button = '', link = '', size =
   // Append post to the container
   container.appendChild(postWrapper);
 }
+
+// Function to update the menu items based on the variables
+function updateMenuItems() {
+  // Select all dynamically created menu items
+  const sidebar = document.getElementById("mySidebar-items");
+  const links = sidebar.querySelectorAll("a");
+
+  links.forEach(link => {
+    // Highlight the active menu item
+    console.log(window.location.href);
+    console.log(link.href);
+    if (window.location.href.includes(link.href)) {
+      link.style.color = "yellow";
+    } else {
+      link.style.color = ""; // Reset if not active
+    }
+
+    // Determine which link corresponds to which variable
+    if (link.href.includes("https://csclubhumboldt.org") && !home_enabled) {
+      link.classList.add("disabled");
+    } else if (link.href.includes("https://csclubhumboldt.org/activities/index.html") && !news_enabled) {
+      link.classList.add("disabled");
+    } else if (link.href.includes("https://csclubhumboldt.org/activities/hackathon/index.html") && !hackathon_enabled) {
+      link.classList.add("disabled");
+    } else if (link.href.includes("https://csclubhumboldt.org/activities/icpc/index.html") && !icpc_enabled) {
+      link.classList.add("disabled");
+    } else {
+      link.classList.remove("disabled");
+    }
+  });
+}
+
+// Function to dynamically create menu items
+function createMenuItems() {
+  const menuItems = [
+    { href: "https://csclubhumboldt.org", iconClass: "ri-home-4-fill", text: "Home", enabled: home_enabled },
+    { href: "https://csclubhumboldt.org/activities/index.html", iconClass: "ri-newspaper-fill", text: "Club News", enabled: news_enabled },
+    { href: "https://csclubhumboldt.org/activities/hackathon/index.html", iconClass: "ri-terminal-box-fill", text: "Hackathon", enabled: hackathon_enabled },
+    { href: "https://csclubhumboldt.org/activities/icpc/index.html", iconClass: "ri-trophy-fill", text: "ICPC", enabled: icpc_enabled },
+  ];
+
+  const sidebar = document.getElementById("mySidebar-items");
+  sidebar.innerHTML = ""; // Clear any existing items
+
+  menuItems.forEach(item => {
+    const a = document.createElement("a");
+    a.href = item.href;
+    a.onclick = w3_close;
+    a.className = "w3-bar-item w3-button w3-padding";
+    a.style.fontWeight = "bold";
+
+    const icon = document.createElement("i");
+    icon.className = item.iconClass;
+    icon.style.marginRight = "5px";
+
+    a.appendChild(icon);
+    a.appendChild(document.createTextNode(" " + item.text));
+    sidebar.appendChild(a);
+
+    if (!item.enabled) {
+      a.classList.add("disabled");
+    }
+  });
+}
+
+// Initialize menu
+createMenuItems();
+updateMenuItems();
+
+
+// Call the function to create menu items on page load
+window.onload = function () {
+  document.body.style.opacity = 1;
+  var timeOfLastUpdate = "2024-10-20T14:20:00";
+  getLastCommit('chanra1n', 'cph-csclub-website');
+
+  if (window.location.pathname.includes('activities')) {
+    createMenuItems();
+    updateMenuItems();
+  }
+
+  
+}
+
