@@ -117,8 +117,8 @@ async function getLastCommit(repoOwner, repoName) {
     // Reformat the date
     const formattedDate = formatDateToCustom(isoDate);
 
-    // console.log(`Last commit date (formatted): ${formattedDate}`);
-    // console.log(`Message: ${lastCommit.commit.message}`);
+    console.log(`Last commit date (formatted): ${formattedDate}`);
+    console.log(`Message: ${lastCommit.commit.message}`);
   } catch (error) {
     console.error(`Error: ${error.message}`);
   }
