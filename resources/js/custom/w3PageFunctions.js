@@ -266,7 +266,7 @@ function updateMenuItems() {
 
   links.forEach(link => {
     // Highlight the active menu item, except for the item that's "Home"
-    if (window.location.href.includes(link.href) && !link.href.includes("https://csclubhumboldt.org")) {
+    if (window.location.href.includes(link.href)) {
       link.style.color = "#ffc72c";
     } else {
       link.style.color = ""; // Reset if not active
