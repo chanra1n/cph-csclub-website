@@ -305,18 +305,6 @@
   }
 
 
-
-
-  @font-face {
-    font-family: 'Baron';
-    src: url('../baron/BaronNeue-Regular.otf');
-}
-
-@font-face {
-    font-family: 'Monarda';
-    src: url('../Monarda.ttf');
-}
-
 body, html {
 background-color:#231F20!important;
 width:100%;
@@ -359,7 +347,7 @@ background-color:#231F20;
 
 .post h1 {
   font-size: 20px;
-  font-family: 'Monarda', sans-serif;
+  font-family: 'Heading', sans-serif;
 }
 
 .post button {
@@ -508,7 +496,7 @@ footer i:hover {
 }
 
 #portfolio h1 {
-  font-family: 'Monarda';
+  font-family: 'Heading';
   font-size: 30px;
   line-height: 1;
   font-weight: 600!important;
@@ -545,6 +533,7 @@ footer i:hover {
 @media (max-width: 767px) {
   #postbody {
     margin-top: 0px;
+    height:100%;
   }
 }
 
