@@ -265,11 +265,8 @@ function updateMenuItems() {
   const links = sidebar.querySelectorAll("a");
 
   links.forEach(link => {
-    // Highlight the active menu item
-    console.log(window.location.href);
-    console.log(link.href);
-    // don't highlight the home page
-    if (window.location.href.includes(link.href) && link.href !== "https://csclubhumboldt.org") {
+    // Highlight the active menu item, except for the item that's "Home"
+    if (window.location.href.includes(link.href) && !link.href.includes("https://csclubhumboldt.org")) {
       link.style.color = "#ffc72c";
     } else {
       link.style.color = ""; // Reset if not active
