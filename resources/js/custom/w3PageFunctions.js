@@ -268,8 +268,9 @@ function updateMenuItems() {
     // Highlight the active menu item
     console.log(window.location.href);
     console.log(link.href);
-    if (window.location.href.includes(link.href)) {
-      link.style.color = "yellow";
+    // don't highlight the home page
+    if (window.location.href.includes(link.href) && link.href !== "https://csclubhumboldt.org") {
+      link.style.color = "#ffc72c";
     } else {
       link.style.color = ""; // Reset if not active
     }
