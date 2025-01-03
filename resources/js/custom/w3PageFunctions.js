@@ -321,10 +321,15 @@ function createMenuItems() {
       a.classList.add("disabled");
     }
 
+    if(item.text === "Home") {
+      a.style.color = "#ffeee0";
+      a.style.setProperty("color", "#ffeee0", "important");
+    }
+
     // Ensure the Home menu item is always white
     if (item.href === "https://csclubhumboldt.org") {
       a.style.color = "#ffeee0";
-      a.style.setProperty("color", "white", "important");
+      a.style.setProperty("color", "#ffeee0", "important");
     }
   });
 }
