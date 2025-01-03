@@ -266,8 +266,11 @@ function updateMenuItems() {
 
   links.forEach(link => {
     // Highlight the active menu item, except for the item that's "Home"
-    if (window.location.href.includes(link.href)) {
-      link.style.color = "#ffc72c";
+    const currentPath = window.location.pathname;
+    const linkPath = new URL(link.href).pathname;
+    
+    if (currentPath === linkPath) {
+      link.style.color = "#ffc72c"; // Highlight active link
     } else {
       link.style.color = ""; // Reset if not active
     }
@@ -325,10 +328,6 @@ function createMenuItems() {
     }
   });
 }
-
-// Initialize menu
-createMenuItems();
-updateMenuItems();
 
 
 // Call the function to create menu items on page load
