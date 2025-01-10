@@ -268,7 +268,7 @@
   .rdp-day_selected:focus:not([disabled]),
   .rdp-day_selected:active:not([disabled]),
   .rdp-day_selected:hover:not([disabled]) {
-    color: white;
+    color: #ffeee0;
     background-color: var(--rdp-accent-color);
   }
   
@@ -305,21 +305,8 @@
   }
 
 
-
-
-  @font-face {
-    font-family: 'prib';
-    src: url('../prib.ttf');
-}
-
-@font-face {
-    font-family: 'syne';
-    src: url('../syne.ttf');
-}
-
 body, html {
-background-color:#000!important;
-font-family: "Poppins", sans-serif!important;
+background-color:#231F20!important;
 width:100%;
 height:100%;
 }
@@ -329,8 +316,8 @@ body {
 }
 
 #mySidebar {
-  background-color: black!important;
-  color: white!important;
+  background-color: #231F20!important;
+  color: #ffeee0!important;
 }
 
 .w3-main {
@@ -341,15 +328,15 @@ body {
 }
 
 hr {
-margin: 0px;
-    border: 1px solid #fec62c;
-    color: #fec62c;
-    outline-color: #fec62c;
-    margin-bottom:15px;
+  margin: 0px;
+  border: 1px solid #ffc72c;
+  color: #ffc72c;
+  outline-color: #ffc72c;
+  margin-bottom: -5px;
 }
 
 .w3-bar-block {
-background-color:black;
+background-color:#231F20;
 }
 .post {
   max-width:375px;
@@ -359,19 +346,20 @@ background-color:black;
 }
 
 .post h1 {
-font-size:24px;
+  font-size: 20px;
+  font-family: 'Heading', sans-serif;
 }
 
 .post button {
   width: 100%;
   box-sizing: border-box;
-  background-color: #fec62c!important;
+  background-color: #ffc72c!important;
   border: none;
   border-radius: 100vmin;
   font-weight: bolder;
   padding: 10px;
   cursor: pointer;
-  color: black;
+  color: #231F20;
   font-size: 16px;
 
 }
@@ -385,6 +373,7 @@ font-size:24px;
   padding-top: 5px;
   border-radius: 15px;
   font-size:16px;
+  color: #ffeee0!important;
 }
 
 .post img { 
@@ -400,7 +389,7 @@ font-size:24px;
   footer {
     text-align: right;
     background-color: transparent;
-    color: #fec62c;
+    color: #ffc72c;
     font-size: 25px;
     padding: 16px;
     padding-bottom: 8px;
@@ -424,7 +413,7 @@ font-size:24px;
     width: -webkit-fill-available;
     text-align: right;
     background-color: transparent;
-    color: #fec62c;
+    color: #ffc72c;
     font-size: 25px;
   }
 
@@ -447,11 +436,11 @@ font-size:24px;
 
 
 footer i {
-  background-color: black;
-  padding: 7.5px;
+  background-color: #231F20;
+  padding: 5px;
   border-radius: 100%;
   cursor: pointer;
-  display:inline-block;
+  display: inline-block;
   line-height: 1;
 }
 
@@ -467,8 +456,7 @@ footer i:hover {
 #pageLogo {
   width: 100%;
   cursor: pointer;
-  border-radius: 100%;
-  padding: 20px;
+  padding: 15px;
 }
 
 #logoContainer .vanta-canvas {
@@ -492,14 +480,30 @@ footer i:hover {
   width: 100%;
   box-sizing: border-box;
   overflow:hidden;
-  background-color: #000000;
+  background-color: #231F20;
+}
+
+/* Hide the header by default */
+#portfolio {
+  display: none;
+}
+
+/* Show the header only on mobile devices */
+@media only screen and (max-width: 767px) {
+  #portfolio {
+    display: flex;
+  }
 }
 
 #portfolio h1 {
-  font-family: 'syne';
+  font-family: 'Heading';
   font-size: 30px;
-  line-height: normal;
+  line-height: 1;
   font-weight: 600!important;
+  width: 40vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 #portfolio img {
@@ -517,12 +521,20 @@ footer i:hover {
 #postbody {
   position: relative;
   z-index: 2;
-  background-color: #004c46;
+  background-color: #346241;
   backdrop-filter: blur(10px);
   padding-top: 16px;
   border-radius: 15px 15px 0px 0px;
   margin-bottom: -16px;
   transition: all 0.25s;
+  margin-top: 16px;
+}
+
+@media (max-width: 767px) {
+  #postbody {
+    margin-top: 0px;
+    height:100%;
+  }
 }
 
 
@@ -555,7 +567,19 @@ footer i:hover {
 }
 
 .w3-sidebar h4 {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 900!important;
 }
 
+
+.w3-black {
+  background-color:#231F20!important;
+}
+
+.w3-white {
+  background-color:#ffeee0!important;
+}
+
+.w3-text-white {
+  color:#ffeee0!important;
+}
